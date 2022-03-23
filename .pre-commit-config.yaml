@@ -24,6 +24,10 @@ repos:
   hooks:
   - id: flake8
     exclude: ^(tests|venv)/
+- repo: https://github.com/pre-commit/mirrors-mypy
+  rev: v0.941
+  hooks:
+  - id: mypy
 - repo: https://github.com/pre-commit/mirrors-fixmyjs
   rev: v2.0.0
   hooks:
