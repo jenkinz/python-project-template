@@ -96,3 +96,9 @@ Run these steps whenever creating a new Python project.
 9. To run tests (make sure you've run `poetry install` at least once so the current project is installed):
 
         $ pytest
+10. To run tests with coverage, first add and install the `pytest-cov` dependency:
+
+        $ poetry add --dev pytest-cov
+11. Run tests with coverage (replace `python_project_template` with your project package name):
+
+        $ pytest --cov=python_project_template tests/
