@@ -10,3 +10,4 @@ setting up Python and requried tools.
 After cloning the project, run the following commands to get setup (assuming macOS).
 
     $ pre-commit install
+    $ pre-commit autoupdate

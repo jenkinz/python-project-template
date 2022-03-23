@@ -1,6 +1,6 @@
 repos:
 - repo: https://github.com/pre-commit/pre-commit-hooks
-  rev: v3.4.0
+  rev: v4.1.0
   hooks:
   - id: check-merge-conflict
   - id: check-yaml
@@ -12,18 +12,18 @@ repos:
   - id: trailing-whitespace
     exclude: ^\.idea/|.*\.md$
 - repo: https://github.com/asottile/reorder_python_imports
-  rev: v2.4.0
+  rev: v3.0.1
   hooks:
   - id: reorder-python-imports
 - repo: https://github.com/ambv/black
-  rev: 20.8b1
+  rev: 22.1.0
   hooks:
   - id: black
     language_version: python3.8
     args: [-l80]
     exclude: ^venv/
 - repo: https://gitlab.com/pycqa/flake8
-  rev: 3.9.0
+  rev: 3.9.2
   hooks:
   - id: flake8
     exclude: ^(tests|venv)/
@@ -33,6 +33,6 @@ repos:
   - id: fixmyjs
     args: ['-l', '-c', '.jshintrc']
 - repo: https://github.com/pre-commit/mirrors-jshint
-  rev: v2.12.0
+  rev: v2.13.4
   hooks:
   - id: jshint
