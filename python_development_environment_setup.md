@@ -109,3 +109,11 @@ Run these steps whenever creating a new Python project.
 13. Add `pre-commit` to dependencies:
 
         $ poetry add pre-commit --dev
+14. In PyCharm, add `black` to External Tools to be able to format with it. Go to PyCharm Preferences > External 
+    Tools, create a new External Tool, and enter the following. Note the Program path may differ slightly on your 
+    machine; to confirm, run `which black` from within the project's Python environment. When adding the program to 
+    PyCharm, be sure to replace the environment name in the path with `$ProjectName`.
+    1. Name: Black
+    2. Program: `/usr/local/Caskroom/miniconda/base/envs/$ProjectName$/bin/black`
+    3. Arguments: `"$FilePath$"`
+    4. Working Directory: `$ProjectFileDir$`
