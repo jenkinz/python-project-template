@@ -86,9 +86,13 @@ Run these steps whenever creating a new Python project.
 6. When done adding required dependencies, install them into the project environment:
 
         $ poetry install
-   This generates `poetry.lock`. Be sure to commit this file after generating it.
+   This generates `poetry.lock`, **and also installs the current project.** Be sure to commit this file after 
+   generating it.
 7. To get the latest versions of the dependencies and to update `poetry.lock`, run:
 
         $ poetry update
 8. In PyCharm, be sure to right-click on the `src` directory and select **Mark Directory as > Sources Root**. If it 
    is already set as the Sources Root, this option will not be available so no action is required.
+9. To run tests (make sure you've run `poetry install` at least once so the current project is installed):
+
+        $ pytest
