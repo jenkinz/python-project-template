@@ -73,36 +73,39 @@ Run these steps whenever creating a new Python project.
 
         $ conda env create -f environment.yaml
 
-4. Activate the environment by specifying the project name to `conda activate` (in this example, 
+3. Activate the environment by specifying the project name to `conda activate` (in this example, 
    `python-project-template`):
 
         $ conda activate python-project-template
-5. Verify the environment was activated correctly:
+4. Verify the environment was activated correctly:
 
         $ conda env list         # should output all environments with a * next to the active env
         $ poetry --version       # should output Poetry version X.Y.Z
-6. To deactivate the environment (and return to the `base` environment):
+5. To deactivate the environment (and return to the `base` environment):
    
         $ conda deactivate
-7. Add required Python dependencies for your application (this updates `pyproject.toml`). For example, add the `flask` package:
+6. Add required Python dependencies for your application (this updates `pyproject.toml`). For example, add the `flask` package:
 
         $ poetry add flask
-8. When done adding required dependencies, install them into the project environment:
+7. When done adding required dependencies, install them into the project environment:
 
         $ poetry install
    This generates `poetry.lock`, **and also installs the current project.** Be sure to commit this file after 
    generating it.
-9. To get the latest versions of the dependencies and to update `poetry.lock`, run:
+8. To get the latest versions of the dependencies and to update `poetry.lock`, run:
 
         $ poetry update
-10. In PyCharm, be sure to right-click on the `src` directory and select **Mark Directory as > Sources Root**. If it 
-    is already set as the Sources Root, this option will not be available so no action is required.
-11. To run tests (make sure you've run `poetry install` at least once so the current project is installed):
+9. In PyCharm, be sure to right-click on the `src` directory and select **Mark Directory as > Sources Root**. If it 
+   is already set as the Sources Root, this option will not be available so no action is required.
+10. To run tests (make sure you've run `poetry install` at least once so the current project is installed):
 
          $ pytest
-12. To run tests with coverage, first add and install the `pytest-cov` dependency:
+11. To run tests with coverage, first add and install the `pytest-cov` dependency:
 
         $ poetry add --dev pytest-cov
-13. Run tests with coverage (replace `python_project_template` with your project package name):
+12. Run tests with coverage (replace `python_project_template` with your project package name):
 
         $ pytest --cov=python_project_template tests/
+13. Add `pre-commit` to dependencies:
+
+        $ poetry add pre-commit --dev
