@@ -57,8 +57,8 @@ Run these steps whenever creating a new Python project.
 - Python constant variable names are all uppercase, with words separated by single underscores (`_`)
 - Python class names are CamelCase
 
-1. Create an `environment.yml` file that specifies the desired Python environment; this will be used by Conda to 
-   create an isolated Python environment. A default `environment.yml` is provided below. At a minimum, specify the 
+1. Create an `environment.yaml` file that specifies the desired Python environment; this will be used by Conda to 
+   create an isolated Python environment. A default `environment.yaml` is provided below. At a minimum, specify the 
    project name in `name`. (Note: the `poetry` dependency is important; this will be used later on in the setup as 
    the dependency manager.)
 
@@ -68,37 +68,41 @@ Run these steps whenever creating a new Python project.
      - python=3.9
      - poetry=1.1.7
    ```
+   
+2. Create the Conda environment from `environment.yaml`:
 
-2. Activate the environment by specifying the project name to `conda activate` (in this example, 
+        $ conda env create -f environment.yaml
+
+4. Activate the environment by specifying the project name to `conda activate` (in this example, 
    `python-project-template`):
 
         $ conda activate python-project-template
-3. Verify the environment was activated correctly:
+5. Verify the environment was activated correctly:
 
         $ conda env list         # should output all environments with a * next to the active env
         $ poetry --version       # should output Poetry version X.Y.Z
-4. To deactivate the environment (and return to the `base` environment):
+6. To deactivate the environment (and return to the `base` environment):
    
         $ conda deactivate
-5. Add required Python dependencies for your application (this updates `pyproject.toml`). For example, add the `flask` package:
+7. Add required Python dependencies for your application (this updates `pyproject.toml`). For example, add the `flask` package:
 
         $ poetry add flask
-6. When done adding required dependencies, install them into the project environment:
+8. When done adding required dependencies, install them into the project environment:
 
         $ poetry install
    This generates `poetry.lock`, **and also installs the current project.** Be sure to commit this file after 
    generating it.
-7. To get the latest versions of the dependencies and to update `poetry.lock`, run:
+9. To get the latest versions of the dependencies and to update `poetry.lock`, run:
 
         $ poetry update
-8. In PyCharm, be sure to right-click on the `src` directory and select **Mark Directory as > Sources Root**. If it 
-   is already set as the Sources Root, this option will not be available so no action is required.
-9. To run tests (make sure you've run `poetry install` at least once so the current project is installed):
+10. In PyCharm, be sure to right-click on the `src` directory and select **Mark Directory as > Sources Root**. If it 
+    is already set as the Sources Root, this option will not be available so no action is required.
+11. To run tests (make sure you've run `poetry install` at least once so the current project is installed):
 
-        $ pytest
-10. To run tests with coverage, first add and install the `pytest-cov` dependency:
+         $ pytest
+12. To run tests with coverage, first add and install the `pytest-cov` dependency:
 
         $ poetry add --dev pytest-cov
-11. Run tests with coverage (replace `python_project_template` with your project package name):
+13. Run tests with coverage (replace `python_project_template` with your project package name):
 
         $ pytest --cov=python_project_template tests/
