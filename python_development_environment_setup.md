@@ -3,7 +3,10 @@
 This document outlines my preferred way to set up a  machine for Python development. Instructions are tailored for 
 macOS.
 
-**Approach:** Use Conda as an environment manager, `pip` as the typical package installer, and Poetry as the dependency manager.
+**Approach:**
+- Use Conda as an environment manager
+- Use `pip` as the typical package installer (with support for `conda` packages if necessary)
+- Use Poetry as the dependency manager
 
 Benefits of this approach include:
 - Better dependency management (often faster than conda dependency resolver)
@@ -14,7 +17,7 @@ Benefits of this approach include:
 - Build a Python package and publishing to PyPI is as easy as running two commands
 - No need to have separate environment files for production and development environments
 
-Resources:
+Resources and references:
 - [Homebrew](https://brew.sh)
 - [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)
 - [A Guide to Python Environment Dependency and Package Management: Conda + Poetry](https://ealizadeh.com/blog/guide-to-python-env-pkg-dependency-using-conda-poetry)
