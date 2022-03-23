@@ -90,6 +90,5 @@ Run these steps whenever creating a new Python project.
 7. To get the latest versions of the dependencies and to update `poetry.lock`, run:
 
         $ poetry update
-
-
-
+8. In PyCharm, be sure to right-click on the `src` directory and select **Mark Directory as > Sources Root**. If it 
+   is already set as the Sources Root, this option will not be available so no action is required.
