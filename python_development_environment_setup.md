@@ -80,7 +80,16 @@ Run these steps whenever creating a new Python project.
 4. To deactivate the environment (and return to the `base` environment):
    
         $ conda deactivate
-5. 
+5. Add required Python dependencies for your application (this updates `pyproject.toml`). For example, add the `flask` package:
+
+        $ poetry add flask
+6. When done adding required dependencies, install them into the project environment:
+
+        $ poetry install
+   This generates `poetry.lock`. Be sure to commit this file after generating it.
+7. To get the latest versions of the dependencies and to update `poetry.lock`, run:
+
+        $ poetry update
 
 
 
