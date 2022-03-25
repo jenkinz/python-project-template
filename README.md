@@ -146,5 +146,7 @@ all of these steps and in that case, skip to the next section).
         $ poetry add <package_name>    # be sure to commit the updated pyproject.toml and poetry.lock files!
 7. Run the following commands to activate the required git pre-commit hooks:
 
-    $ pre-commit install
-    $ pre-commit autoupdate
+        $ pre-commit install
+8. Run the project test suite to verify everything is working:
+
+        $ pytest .
