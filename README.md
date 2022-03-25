@@ -49,7 +49,7 @@ Run these steps once per machine.
 ## Project Steps
 
 Run these steps whenever creating a new Python project (or, just clone this template project which already includes 
-all of these steps - in that case, skip to the next section).
+all of these steps and in that case, skip to the next section).
 
 **Naming conventions:**
 - Directories, project, and package names are all lowercase, with words separated by single dashes (`-`)
