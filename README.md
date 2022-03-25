@@ -52,11 +52,14 @@ Run these steps whenever creating a new Python project (or, just clone this temp
 all of these steps and in that case, skip to the next section).
 
 **Naming conventions:**
-- Directories, project, and package names are all lowercase, with words separated by single dashes (`-`)
-- File names are all lowercase, with words separated by single underscores (`_`)
+- Project names and directory names, except for package names, are all lowercase with  words separated by single 
+  dashes (`-`)
+- Package names and file names are all lowercase, with words separated by single underscores (`_`)
 - Python variable names are all lowercase, with words separated by single underscores (`_`)
 - Python constant variable names are all uppercase, with words separated by single underscores (`_`)
 - Python class names are CamelCase
+- Line lengths are 120
+- All other rules of PEP8 are followed
 
 1. Create an `environment.yaml` file that specifies the desired Python environment; this will be used by Conda to 
    create an isolated Python environment. A default `environment.yaml` is provided below. At a minimum, specify the 
