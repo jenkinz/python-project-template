@@ -34,7 +34,7 @@ Run these steps once per machine.
 1. Install Homebrew or ensure it's up-to-date by running:
 
         $ brew update
-2. Install Xcode
+2. Install Xcode or ensure it's up-to-date by checking the Mac App Store
 3. Install Xcode command line tools:
 
         $ xcode-select --install
