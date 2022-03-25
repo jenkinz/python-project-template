@@ -1,3 +1,4 @@
+# Specifies the Python environment for this project. Create with `conda env create -f environment.yaml`.
 name: python-project-template
 dependencies:
   - python=3.9
