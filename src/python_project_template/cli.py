@@ -1,11 +1,11 @@
-"""This module provides an example of a command-line application (CLI) using click."""
+"""This module provides an example implementation of a command-line interface (CLI) using click."""
 import click
 
 
 @click.command()
 @click.option("--count", type=int, default=1, help="Number of greetings.")
 @click.option("--name", type=str, prompt="Your name", help="The person to greet.")
-def hello(count: int, name: str) -> None:
+def cli(count: int, name: str) -> None:
     """Simple program that greets NAME for a total of COUNT times. Note this docstring is the description for this CLI
     command when the --help option is specified.
     """
@@ -14,4 +14,4 @@ def hello(count: int, name: str) -> None:
 
 
 if __name__ == "__main__":  # pragma: no cover
-    hello()
+    cli()
