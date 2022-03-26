@@ -23,7 +23,6 @@ Resources and references:
 - [Python Best Practices for a New Project in 2021](https://mitelman.engineering/blog/python-best-practice/automating-python-best-practices-for-a-new-project/)
 - [A Guide to Python Environment Dependency and Package Management: Conda + Poetry](https://ealizadeh.com/blog/guide-to-python-env-pkg-dependency-using-conda-poetry)
 - [Does it make sense to use Conda + Poetry?](https://stackoverflow.com/questions/70851048/does-it-make-sense-to-use-conda-poetry#:~:text=Conda%20is%20primarily%20a%20environment,%2C%20an%20upgrade%20of%20Pyenv)
-- [pyenv](https://github.com/pyenv/pyenv)
 - [Conda](https://docs.conda.io/en/latest/)
 - [Poetry](https://python-poetry.org/docs/)
 
