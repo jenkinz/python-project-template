@@ -122,7 +122,8 @@ skip to the next section).
 10. To run tests (make sure you've run `poetry install` at least once so the
     current project is installed):
 
-         $ pytest
+        $ cd tests 
+        $ pytest .
 11. To run tests with coverage, first add and install the `pytest-cov`
     dependency:
 
@@ -172,4 +173,5 @@ skip to the next section).
         $ pre-commit install
 8. Run the project test suite to verify everything is working:
 
+        $ cd tests
         $ pytest .
