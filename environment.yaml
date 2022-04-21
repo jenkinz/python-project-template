@@ -1,5 +1,5 @@
 # Specifies the Python environment for this project. Create with `conda env create -f environment.yaml`.
-name: gfc-financials
+name: python-project-template
 channels:
   - conda-forge   # required for functional camelot-py on Apple Silicon (arm64)
 dependencies:
