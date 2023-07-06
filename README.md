@@ -83,7 +83,7 @@ skip to the next section).
    name: python-project-template
    dependencies:
      - python=3.9
-     - poetry=1.1.7
+     - poetry=1.4.0
    ```
 
 2. Create the Conda environment from `environment.yaml`:
