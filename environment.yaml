@@ -4,4 +4,4 @@ channels:
   - conda-forge   # required for functional camelot-py on Apple Silicon (arm64)
 dependencies:
   - python=3.9
-  - poetry=1.4.0
+  - poetry=1.5.1
